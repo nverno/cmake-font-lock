@@ -1490,15 +1490,13 @@ To activate this every time a CMake file is opened, use the following:
 ;; This ensures that this package is enabled automatically when
 ;; installed as a package (when cmake-mode is installed).
 
-;; Note: Personally, I dislike adding lambda expressions to hooks.
-;; However, in this case it's required to ensure that this package
-;; isn't loaded until it's actually used.
-
 ;;;###autoload
-(add-hook 'change-major-mode-after-body-hook
-          (lambda ()
-            (when (apply #'derived-mode-p cmake-font-lock-modes)
-              (cmake-font-lock-activate))))
+(progn
+  (defun cmake-font-lock-maybe-activate ()
+    "Call `cmake-font-lock-activate' in `cmake-font-lock-modes'."
+    (when (apply #'derived-mode-p cmake-font-lock-modes)
+      (cmake-font-lock-activate)))
+  (add-hook 'change-major-mode-after-body-hook #'cmake-font-lock-maybe-activate))
 
 
 (defun cmake-font-lock-add-keywords (name keywords)
