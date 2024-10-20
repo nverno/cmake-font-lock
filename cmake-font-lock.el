@@ -1,4 +1,4 @@
-;;; cmake-font-lock.el --- Advanced, type aware, highlight support for CMake
+;;; cmake-font-lock.el --- Advanced, type aware, highlight support for CMake  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2012-2021 Anders Lindgren
 
@@ -1477,7 +1477,7 @@ Set this to nil to disable automatic activation.")
 
 To activate this every time a CMake file is opened, use the following:
 
-    (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)"
+    (add-hook \\='cmake-mode-hook \\='cmake-font-lock-activate)"
   (interactive)
   (cmake-font-lock-setup)
   ;; If this function is called after font-lock is up and running,
