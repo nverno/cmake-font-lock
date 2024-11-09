@@ -1608,7 +1608,7 @@ Return nil if the matching closing brace was not found."
 (defvar cmake-font-lock-match-dollar-braces-has-name nil
   "True when the current brace construct is a hash, like ENV.")
 
-(defun cmake-font-lock-match-dollar-braces-content (lim)
+(defun cmake-font-lock-match-dollar-braces-content (_lim)
   "Match (part of) the content of a ${...} construct.
 In the case of nested ${...} construct, repeated calls to this
 match next top-level part.
