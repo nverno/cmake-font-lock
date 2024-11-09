@@ -1983,7 +1983,7 @@ This is set by `cmake-font-lock-next-collected-argument'
 to correspond to the type of the argument.")
 
 
-(defun cmake-font-lock-next-collected-argument (lim)
+(defun cmake-font-lock-next-collected-argument (_lim)
   "Match the next argument.
 
 When there are arguments to match, set the active match data to
