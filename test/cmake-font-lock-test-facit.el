@@ -1,4 +1,4 @@
-;;; cmake-font-lock-test-facit.el --- Regression test CMake font-lock.
+;;; cmake-font-lock-test-facit.el --- Regression test CMake font-lock.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2012-2013 Anders Lindgren
 

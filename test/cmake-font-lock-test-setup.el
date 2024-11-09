@@ -1,4 +1,4 @@
-;;; cmake-font-lock-test-setup.el --- Setup and execute all tests
+;;; cmake-font-lock-test-setup.el --- Setup and execute all tests  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
@@ -26,7 +26,7 @@
   (add-to-list 'load-path
                (concat cmake-font-lock-test-setup-directory dir)))
 
-(require 'cmake-mode)
+(require 'ycmake-mode)
 (require 'cmake-font-lock)
 
 (require 'cmake-font-lock-test-simple)

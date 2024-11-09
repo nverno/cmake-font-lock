@@ -1,4 +1,4 @@
-;;; cmake-font-lock-test-simple.el --- Tests for CMake font-lock rules.
+;;; cmake-font-lock-test-simple.el --- Tests for CMake font-lock rules.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013 Anders Lindgren
 
