@@ -26,7 +26,7 @@
   (add-to-list 'load-path
                (concat cmake-font-lock-test-setup-directory dir)))
 
-(require 'ycmake-mode)
+(require 'cmake-mode)
 (require 'cmake-font-lock)
 
 (require 'cmake-font-lock-test-simple)
